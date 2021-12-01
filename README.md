@@ -22,3 +22,31 @@ The program consists of 4 classes: `Person`, `Virus`, `Simulation`, and `Logger`
 * `Person`: Represents the people that make up the population that the virus is spreading through.
 * `Virus`: Models the properties of the virus we wish to simulate.
 * `Logger`: A helper class for logging all events that happen in the simulation.
+
+## Running the Program
+
+The program is designed to be run from the command line.  You can do this by running
+
+```python
+python3 simulation.py
+```
+
+followed by the command line arguments in the following order,
+separated by spaces: {population size} {vacc_percentage} {virus_name} {mortality_rate} {repro_rate} {optional: number of people initially infected (default is 1)}
+
+ Let's look at an example:
+
+ * Population Size: 100,000
+ * Vaccination Percentage: 90%
+ * Virus Name: Ebola
+ * Mortality Rate: 70%
+ * Reproduction Rate: 25%
+ * People Initially Infected: 10
+
+ Then I would type:
+
+ ```python
+ python3 simulation.py 100000 0.90 Ebola 0.70 0.25 10
+ ``` 
+ 
+ in the terminal.
