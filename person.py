@@ -7,5 +7,7 @@ class State(Enum):
     DEAD = 3
 
 class Person:
-    def __init__(self, state=State.NORMAL):
-        self.state = state
+    def __init__(self, vaccinated=False, infected=False):
+        self.vaccinated = vaccinated
+        self.infected = infected
+        self.dead = False
