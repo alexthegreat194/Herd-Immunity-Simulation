@@ -1,8 +1,0 @@
-2021-12-07 00:53:47.482774 Ebola
-
-
-2021-12-07 00:53:48.253978
-	Normal: 4898, Vaccinated: 90023, Infected: 5002, Dead: 77
-
-2021-12-07 00:53:49.683021
-	Normal: 0, Vaccinated: 91246, Infected: 4898, Dead: 3856

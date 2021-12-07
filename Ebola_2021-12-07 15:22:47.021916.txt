@@ -1,0 +1,37 @@
+2021-12-07 15:22:47.022201 Ebola
+Population size: 100000, percent vaccinated: 0.9, virus name: Ebola, mortality rate: 0.25, reproductive rate: 0.7
+
+
+2021-12-07 15:22:47.447634
+	Normal: 9934, Vaccinated: 90004, Infected: 56, Dead: 6
+
+2021-12-07 15:22:47.678468
+	Normal: 9534, Vaccinated: 90020, Infected: 400, Dead: 46
+
+2021-12-07 15:22:47.944991
+	Normal: 7207, Vaccinated: 90116, Infected: 2359, Dead: 350
+
+2021-12-07 15:22:48.419961
+	Normal: 1362, Vaccinated: 90698, Infected: 6351, Dead: 2095
+
+2021-12-07 15:22:49.258718
+	Normal: 18, Vaccinated: 91740, Infected: 2754, Dead: 6898
+
+2021-12-07 15:22:49.802870
+	Normal: 4, Vaccinated: 91017, Infected: 302, Dead: 8965
+
+2021-12-07 15:22:50.050521
+	Normal: 2, Vaccinated: 90799, Infected: 4, Dead: 9197
+
+2021-12-07 15:22:50.271618
+	Normal: 2, Vaccinated: 90798, Infected: 0, Dead: 9200
+
+
+What percentage of the population became infected at some point before the virus burned out?
+	12.225999999999999% of the population was infected
+
+What percentage of the population died from the virus?
+	9.2% of the population died to the virus
+
+Out of all interactions sick individuals had during the entire simulation, how many total interactions did we see where a vaccination saved a person from potentially becoming infected?
+	1112873 people were saved by being vaccinated
