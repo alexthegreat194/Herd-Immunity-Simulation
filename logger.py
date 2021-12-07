@@ -1,4 +1,5 @@
-
+from datetime import date, datetime
+from math import inf
 from person import Person
 
 class interaction:
@@ -11,5 +12,18 @@ class interaction:
 
 
 class Logger:
-    def __init__(self):
+    def __init__(self, name):
         self.interactions = []
+        self.file_name = f"{name}_{str(datetime.now())}.txt"
+        f = open(self.file_name, "a+")
+        f.write(f"{str(datetime.now())} {name}\n\n")
+        f.close()
+
+    def log(self, normal_people, vaccinated_people, infected_people, dead_people):
+        f = open(self.file_name, "a+")
+        f.write("\n")
+        f.write(f"{str(datetime.now())}\n")
+        f.write(f"\tNormal: {normal_people}, Vaccinated: {vaccinated_people}, Infected: {infected_people}, Dead: {dead_people}\n")
+        f.close()
+
+    

@@ -2,10 +2,19 @@ import random
 import sys
 from person import Person, State
 from virus import Virus
+from logger import Logger
 from time import sleep, time
+
+'''
+TODO:
+make logger class 
+'''
 
 class Simulation:
     def __init__(self, pop_size, vac_perc, virus_name, rep_rate, mort_rate, init_infected):
+        #create logger
+        self.logger = Logger(virus_name)
+
         #create virus
         self.virus = Virus(virus_name, rep_rate, mort_rate)
         
@@ -35,6 +44,14 @@ class Simulation:
             if self.people[i].infected == True and self.people[i].dead == False:
                 infected_indices.append(i)
         return infected_indices
+
+    def vaccinated_people(self):
+        #returns a list containing the indices of infect people objects
+        vaccinated_indices = []
+        for i in range(len(self.people)):
+            if self.people[i].vaccinated == True and self.people[i].dead == False:
+                vaccinated_indices.append(i)
+        return vaccinated_indices
 
     def normal_people(self):
         normal_indices = []
@@ -85,6 +102,8 @@ class Simulation:
             # print(i)
             # print(self.people[i].infected)
         print(f"found infected: {len(self.infected_people())}")
+
+        self.logger.log(len(self.normal_people()), len(self.vaccinated_people()), len(self.infected_people()), len(self.dead_people()))
 
 
 if __name__ == '__main__':
